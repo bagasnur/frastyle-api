@@ -1,0 +1,343 @@
+@use '../../node_modules/frastyle-css/dist/css/frastyle.min.css';
+@use '../../node_modules/@frastyle/simvle-theme/dist/css/simvle.min.css';
+
+.navbar {
+	width: 100%;
+    height: 80px;
+	position: sticky;
+	padding: 1.5em 0;
+	top: 0;
+	transition: 0.5s;
+	-webkit-animation: 1s;
+	animation: 1s;
+	z-index: 100;
+    > * {
+        height: 100%;
+    }
+}
+.linkNavbar {
+	align-self: center;
+	a {
+		color: var(--black);
+		text-decoration: none;
+		margin-right: 2em;
+		padding: 0.5em 0;
+		font-weight: 500;
+		&:hover,
+		&.active {
+			color: var(--primary);
+		}
+		&.active {
+			border-bottom: var(--primary) solid 2px;
+		}
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
+.logo {
+	display: flex;
+	height: 2em;
+}
+
+.hero {
+    display: flex;
+    background: url('../../public/img/kawung.svg') bottom center no-repeat;
+    background-size: 120%;
+    min-height: 500px;
+    height: calc(100vh - 150px);
+}
+
+.auth {
+    display: flex;
+    min-height: 550px;
+    height: 100%;
+}
+
+.auth-header {
+    h1 {
+        font-size: 2rem;
+    }
+    span {
+        font-size: 0.75rem;
+    }
+}
+
+a.auth-header {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.dashboard {
+    padding: 1em 0 3em;
+}
+
+.icon{
+    &-danger{
+        width: 20px;
+        height: 20px;
+        color: var(--danger);
+        vertical-align: middle;
+    }
+    &-success{
+        width: 20px;
+        height: 20px;
+        color: var(--success);
+        vertical-align: middle;
+    }
+}
+
+form {
+    button, a[class*="button"] {
+        display: block;
+        text-align: center;
+    }
+}
+
+.card {
+    img {
+        object-fit: cover;
+        width: 64px;
+        border: 3px solid var(--white);
+        border-radius: 50%;
+    }
+}
+
+
+table {
+    td {
+        & [class*="button"] {
+            display: inline-block;
+            padding: 8px;
+        }
+        & .button-danger {
+            margin: 2px 4px;
+        }
+    }
+    .icon-table {
+        width: 0;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    th {
+        text-align: center;
+        --bg-header: hsl(220, 70%, 95%);
+    }
+
+    svg {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+    }
+
+}
+
+
+.dataTables_wrapper {
+    .dataTables_filter, .dataTables_length {
+        margin: 0 0 8px;
+        text-align: left;
+    }
+    .dataTables_paginate .paginate_button {
+        color: var(--black) !important;
+        border: none;
+        transform: scale(1);
+
+        &.disabled, &.disabled:hover, &.disabled:active {
+            color: var(--light-4) !important;
+        }
+        &:hover, &.current, &.current:hover {
+            color: var(--white) !important;
+            background: var(--primary);
+            border: none;
+        }
+    }
+}
+
+
+footer {
+    height: 75px;
+    margin-top: -20px;
+    span {
+        font-size: 0.75rem;
+    }
+}
+
+
+.tab {
+    &-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    &-nav {
+        --tab-corner: 1em 1em 0 0;
+        display: flex;
+        white-space: nowrap;
+        overflow-x: auto;
+        background: var(--light);
+        border-radius: var(--tab-corner);
+        a {
+            flex: 1;
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-tab);
+            color: var(--black);
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-bottom: 2px solid var(--tab-nav, var(--light-3));
+            &:hover {
+                background: var(--bg-tab, var(--primary));
+                color: var(--text-tab, var(--white));
+                border-color: var(--tab-nav, transparent);
+            }
+            &:active, &.active {
+                background: var(--bg-tab, var(--white));
+                color: var(--text-tab, var(--black));
+                border-color: var(--tab-nav, transparent);
+            }
+        }
+    }
+    &-content {
+        --space-tab: 2em 0;
+        overflow-x: auto;
+        & > .content{
+            display: inline-block;
+            width: auto;
+            min-width: calc(100% - 2.5em);
+            padding: var(--space-tab);
+            margin: 1em 1.25em;
+        }
+    }
+
+}
+
+.sweet {
+    &-icon {
+        color: var(--danger) !important;
+    }
+    &-title {
+        font-size: 1.25rem;
+    }
+    &-content {
+        font-size: 1rem;
+    }
+}
+.button-sweet {
+    background: var(--light) !important;
+    color: var(--dark) !important;
+    &-danger {
+        background: var(--danger) !important;
+    }
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity .1s;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: auto;
+    z-index: 9999;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    background: var(--bg-popup, var(--white));
+    position: relative;
+    width: 90%;
+    margin: 2em auto;
+    padding: var(--space-popup, 1.5em 2em);
+    border-radius: var(--corner-popup, 8px);
+    transition: all 1s ease-in-out;
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        transition: all .2s;
+        font-size: 32px;
+        text-decoration: none;
+        color: #000;
+        &:hover {
+            color: var(--close-popup, var(--danger));
+        }
+    }
+    &-content {
+        overflow: auto;
+    }
+}
+
+[id*="tag-"], [id*="ver-"] {
+    & ~ label {
+        --bg-badge: var(--light-2);
+        margin-right: 0.5em !important;
+        margin-bottom: 1em !important;
+        &:hover {
+            --bg-badge: var(--primary);
+            --text-input: var(--white);
+        }
+    }
+    &:checked ~ label {
+        --bg-badge: var(--success);
+        --text-input: var(--white);
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "\2714";
+            width: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 548px){
+    .auth {
+        min-height: calc(100vh - 70px);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .tab {
+        &-content {
+            --space-tab: 3em 3.25em;
+        }
+    }
+    .popup {
+        width: 60%;
+        margin: 4em auto;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .popup {
+        &-content {
+            max-height: 200px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .container {
+        max-width: 1080px;
+    }
+    .hero {
+        background-size: 1400px;
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+    .popup {
+        width: 30%;
+    }
+}
