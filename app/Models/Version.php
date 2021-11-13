@@ -13,7 +13,7 @@ class Version extends Model
     ];
     public $timestamps = true;
 
-    public function konten(){
+    public function content(){
         return $this->belongsToMany(Content::class, 'version_content', 'version_id', 'content_id');
     }
 }

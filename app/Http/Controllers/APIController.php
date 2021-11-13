@@ -88,7 +88,7 @@ class APIController extends Controller
 
     public function version()
     {
-        $result = Version::select('number','stage','created_at as release-date')->orderBy('number', 'DESC')->get();
+        $result = Version::whereHas('content')->select('number','stage','created_at as release-date')->orderBy('number', 'DESC')->get();
 
         if (count($result) == 0) {
             $data['code'] = 404;

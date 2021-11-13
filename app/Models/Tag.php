@@ -13,7 +13,7 @@ class Tag extends Model
     ];
     public $timestamps = true;
 
-    public function konten(){
+    public function content(){
         return $this->belongsToMany(Content::class, 'tag_content', 'tag_id', 'content_id');
     }
 }
