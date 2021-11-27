@@ -101,7 +101,7 @@ class DatabaseSeeder extends Seeder
         ],[
             'id' => 5,
             'title' => 'Responsif',
-            'content_file' => 'responsives.mdx',
+            'content_file' => 'responsive.mdx',
             'category_id' => 2,
             'created_at' => now(),
             'updated_at' => now()
@@ -226,20 +226,13 @@ class DatabaseSeeder extends Seeder
             'updated_at' => now()
         ],[
             'id' => 23,
-            'title' => 'Margin',
-            'content_file' => 'margins.mdx',
+            'title' => 'Margin & Padding',
+            'content_file' => 'margins-and-paddings.mdx',
             'category_id' => 6,
             'created_at' => now(),
             'updated_at' => now()
         ],[
             'id' => 24,
-            'title' => 'Padding',
-            'content_file' => 'paddings.mdx',
-            'category_id' => 6,
-            'created_at' => now(),
-            'updated_at' => now()
-        ],[
-            'id' => 25,
             'title' => 'Warna',
             'content_file' => 'colors.mdx',
             'category_id' => 6,
@@ -542,416 +535,412 @@ class DatabaseSeeder extends Seeder
             'content_id' => 23,
             'tag_id' => 3
         ],[
-            'id' => 17,
-            'content_id' => 24,
-            'tag_id' => 3
-        ],[
         // Alignment Grid
-            'id' => 18,
+            'id' => 17,
             'content_id' => 7,
             'tag_id' => 4
         ],[
         // Box
-            'id' => 19,
+            'id' => 18,
             'content_id' => 6,
             'tag_id' => 5
         ],[
         // Columns
-            'id' => 20,
+            'id' => 19,
             'content_id' => 6,
             'tag_id' => 6
         ],[
-            'id' => 21,
+            'id' => 20,
             'content_id' => 7,
             'tag_id' => 6
         ],[
         // Container
-            'id' => 22,
+            'id' => 21,
             'content_id' => 6,
             'tag_id' => 7
         ],[
         // Row
-            'id' => 23,
+            'id' => 22,
             'content_id' => 6,
             'tag_id' => 8
         ],[
-            'id' => 24,
+            'id' => 23,
             'content_id' => 7,
             'tag_id' => 8
         ],[
         // L, C, R
-            'id' => 25,
+            'id' => 24,
             'content_id' => 7,
             'tag_id' => 9
         ],[
-            'id' => 26,
+            'id' => 25,
             'content_id' => 9,
             'tag_id' => 9
         ],[
         // T, M, B
-            'id' => 27,
+            'id' => 26,
             'content_id' => 7,
             'tag_id' => 10
         ],[
         // Tipe Browser
-            'id' => 28,
+            'id' => 27,
             'content_id' => 2,
             'tag_id' => 11
         ],[
         // CDN
-            'id' => 29,
+            'id' => 28,
             'content_id' => 3,
             'tag_id' => 12
         ],[
-            'id' => 30,
+            'id' => 29,
             'content_id' => 4,
             'tag_id' => 12
         ],[
         // Download
-            'id' => 31,
+            'id' => 30,
             'content_id' => 3,
             'tag_id' => 13
         ],[
-            'id' => 32,
+            'id' => 31,
             'content_id' => 4,
             'tag_id' => 13
         ],[
         // NPM, Yarn
-            'id' => 33,
+            'id' => 32,
             'content_id' => 3,
             'tag_id' => 14
         ],[
-            'id' => 34,
+            'id' => 33,
             'content_id' => 4,
             'tag_id' => 14
         ],[
         // Repo Github
-            'id' => 35,
+            'id' => 34,
             'content_id' => 3,
             'tag_id' => 15
         ],[
-            'id' => 36,
+            'id' => 35,
             'content_id' => 4,
             'tag_id' => 15
         ],[
         // Customize
-            'id' => 37,
+            'id' => 36,
             'content_id' => 4,
             'tag_id' => 16
         ],[
-            'id' => 38,
+            'id' => 37,
             'content_id' => 11,
             'tag_id' => 16
         ],[
-            'id' => 39,
+            'id' => 38,
             'content_id' => 12,
             'tag_id' => 16
         ],[
-            'id' => 40,
+            'id' => 39,
             'content_id' => 13,
             'tag_id' => 16
         ],[
-            'id' => 41,
+            'id' => 40,
             'content_id' => 15,
             'tag_id' => 16
         ],[
-            'id' => 42,
+            'id' => 41,
             'content_id' => 17,
             'tag_id' => 16
         ],[
-            'id' => 43,
+            'id' => 42,
             'content_id' => 18,
             'tag_id' => 16
         ],[
-            'id' => 44,
+            'id' => 43,
             'content_id' => 19,
             'tag_id' => 16
         ],[
-            'id' => 45,
+            'id' => 44,
             'content_id' => 20,
             'tag_id' => 16
         ],[
-            'id' => 46,
+            'id' => 45,
             'content_id' => 21,
             'tag_id' => 16
         ],[
         // Fonts
-            'id' => 47,
+            'id' => 46,
             'content_id' => 8,
             'tag_id' => 17
         ],[
-            'id' => 48,
+            'id' => 47,
             'content_id' => 9,
             'tag_id' => 17
         ],[
-            'id' => 49,
+            'id' => 48,
             'content_id' => 10,
             'tag_id' => 17
         ],[
         // Danger, Failed
-            'id' => 50,
+            'id' => 49,
             'content_id' => 11,
+            'tag_id' => 18
+        ],[
+            'id' => 50,
+            'content_id' => 18,
             'tag_id' => 18
         ],[
             'id' => 51,
-            'content_id' => 18,
+            'content_id' => 19,
             'tag_id' => 18
         ],[
             'id' => 52,
-            'content_id' => 19,
-            'tag_id' => 18
-        ],[
-            'id' => 53,
-            'content_id' => 25,
+            'content_id' => 24,
             'tag_id' => 18
         ],[
         // Dark, Black
-            'id' => 54,
+            'id' => 53,
             'content_id' => 11,
+            'tag_id' => 19
+        ],[
+            'id' => 54,
+            'content_id' => 18,
             'tag_id' => 19
         ],[
             'id' => 55,
-            'content_id' => 18,
+            'content_id' => 19,
             'tag_id' => 19
         ],[
             'id' => 56,
-            'content_id' => 19,
+            'content_id' => 22,
             'tag_id' => 19
         ],[
             'id' => 57,
-            'content_id' => 22,
-            'tag_id' => 19
-        ],[
-            'id' => 58,
-            'content_id' => 25,
+            'content_id' => 24,
             'tag_id' => 19
         ],[
         // Info
-            'id' => 59,
+            'id' => 58,
             'content_id' => 11,
+            'tag_id' => 20
+        ],[
+            'id' => 59,
+            'content_id' => 18,
             'tag_id' => 20
         ],[
             'id' => 60,
-            'content_id' => 18,
+            'content_id' => 19,
             'tag_id' => 20
         ],[
             'id' => 61,
-            'content_id' => 19,
-            'tag_id' => 20
-        ],[
-            'id' => 62,
-            'content_id' => 25,
+            'content_id' => 24,
             'tag_id' => 20
         ],[
         // light, White
-            'id' => 63,
+            'id' => 62,
             'content_id' => 11,
+            'tag_id' => 21
+        ],[
+            'id' => 63,
+            'content_id' => 18,
             'tag_id' => 21
         ],[
             'id' => 64,
-            'content_id' => 18,
+            'content_id' => 19,
             'tag_id' => 21
         ],[
             'id' => 65,
-            'content_id' => 19,
-            'tag_id' => 21
-        ],[
-            'id' => 66,
             'content_id' => 22,
             'tag_id' => 21
         ],[
-            'id' => 67,
-            'content_id' => 25,
+            'id' => 66,
+            'content_id' => 24,
             'tag_id' => 21
         ],[
         // Primary
-            'id' => 68,
+            'id' => 67,
             'content_id' => 11,
+            'tag_id' => 22
+        ],[
+            'id' => 68,
+            'content_id' => 18,
             'tag_id' => 22
         ],[
             'id' => 69,
-            'content_id' => 18,
+            'content_id' => 19,
             'tag_id' => 22
         ],[
             'id' => 70,
-            'content_id' => 19,
-            'tag_id' => 22
-        ],[
-            'id' => 71,
-            'content_id' => 25,
+            'content_id' => 24,
             'tag_id' => 22
         ],[
         // Secondary
-            'id' => 72,
+            'id' => 71,
             'content_id' => 11,
+            'tag_id' => 23
+        ],[
+            'id' => 72,
+            'content_id' => 18,
             'tag_id' => 23
         ],[
             'id' => 73,
-            'content_id' => 18,
+            'content_id' => 19,
             'tag_id' => 23
         ],[
             'id' => 74,
-            'content_id' => 19,
-            'tag_id' => 23
-        ],[
-            'id' => 75,
-            'content_id' => 25,
+            'content_id' => 24,
             'tag_id' => 23
         ],[
         // Success
-            'id' => 76,
+            'id' => 75,
             'content_id' => 11,
+            'tag_id' => 24
+        ],[
+            'id' => 76,
+            'content_id' => 18,
             'tag_id' => 24
         ],[
             'id' => 77,
-            'content_id' => 18,
+            'content_id' => 19,
             'tag_id' => 24
         ],[
             'id' => 78,
-            'content_id' => 19,
-            'tag_id' => 24
-        ],[
-            'id' => 79,
-            'content_id' => 25,
+            'content_id' => 24,
             'tag_id' => 24
         ],[
         // Warning
-            'id' => 80,
+            'id' => 79,
             'content_id' => 11,
             'tag_id' => 25
         ],[
-            'id' => 81,
+            'id' => 80,
             'content_id' => 18,
             'tag_id' => 25
         ],[
-            'id' => 82,
+            'id' => 81,
             'content_id' => 19,
             'tag_id' => 25
         ],[
-            'id' => 83,
-            'content_id' => 25,
+            'id' => 82,
+            'content_id' => 24,
             'tag_id' => 25
         ],[
         // Large
-            'id' => 84,
+            'id' => 83,
             'content_id' => 10,
             'tag_id' => 26
         ],[
-            'id' => 85,
+            'id' => 84,
             'content_id' => 11,
             'tag_id' => 26
         ],[
-            'id' => 86,
+            'id' => 85,
             'content_id' => 19,
             'tag_id' => 26
         ],[
-            'id' => 87,
+            'id' => 86,
             'content_id' => 22,
             'tag_id' => 26
         ],[
         // Normal
-            'id' => 88,
+            'id' => 87,
             'content_id' => 11,
             'tag_id' => 27
         ],[
-            'id' => 89,
+            'id' => 88,
             'content_id' => 19,
             'tag_id' => 27
         ],[
-            'id' => 90,
+            'id' => 89,
             'content_id' => 22,
             'tag_id' => 27
         ],[
         // Small
-            'id' => 91,
+            'id' => 90,
             'content_id' => 10,
             'tag_id' => 28
         ],[
-            'id' => 92,
+            'id' => 91,
             'content_id' => 11,
             'tag_id' => 28
         ],[
-            'id' => 93,
+            'id' => 92,
             'content_id' => 19,
             'tag_id' => 28
         ],[
-            'id' => 94,
+            'id' => 93,
             'content_id' => 22,
             'tag_id' => 28
         ],[
         // Image Render
-            'id' => 95,
+            'id' => 94,
             'content_id' => 14,
             'tag_id' => 29
         ],[
         // Opsi Input
-            'id' => 96,
+            'id' => 95,
             'content_id' => 13,
             'tag_id' => 30
         ],[
         // Opsi List
-            'id' => 97,
+            'id' => 96,
             'content_id' => 15,
             'tag_id' => 31
         ],[
         // Opsi Teks
-            'id' => 98,
+            'id' => 97,
             'content_id' => 10,
             'tag_id' => 32
         ],[
         // Quote
-            'id' => 99,
+            'id' => 98,
             'content_id' => 16,
             'tag_id' => 33
         ],[
         // Var, Kbd
-            'id' => 100,
+            'id' => 99,
             'content_id' => 12,
             'tag_id' => 34
         ],[
         // Type
-            'id' => 101,
+            'id' => 100,
             'content_id' => 10,
             'tag_id' => 35
         ],[
-            'id' => 102,
+            'id' => 101,
             'content_id' => 11,
             'tag_id' => 35
         ],[
-            'id' => 103,
+            'id' => 102,
             'content_id' => 13,
             'tag_id' => 35
         ],[
-            'id' => 104,
+            'id' => 103,
             'content_id' => 14,
             'tag_id' => 35
         ],[
-            'id' => 105,
+            'id' => 104,
             'content_id' => 15,
             'tag_id' => 35
         ],[
-            'id' => 106,
+            'id' => 105,
             'content_id' => 16,
             'tag_id' => 35
         ],[
-            'id' => 107,
+            'id' => 106,
             'content_id' => 18,
             'tag_id' => 35
         ],[
-            'id' => 108,
+            'id' => 107,
             'content_id' => 19,
             'tag_id' => 35
         ],[
-            'id' => 109,
+            'id' => 108,
             'content_id' => 20,
             'tag_id' => 35
         ],[
-            'id' => 110,
+            'id' => 109,
             'content_id' => 22,
             'tag_id' => 35
         ],[
-            'id' => 111,
-            'content_id' => 25,
+            'id' => 110,
+            'content_id' => 24,
             'tag_id' => 35
         ]
         ]);
@@ -1053,10 +1042,6 @@ class DatabaseSeeder extends Seeder
         ],[
             'id' => 24,
             'content_id' => 24,
-            'version_id' => 1
-        ],[
-            'id' => 25,
-            'content_id' => 25,
             'version_id' => 1
         ]
         ]);
