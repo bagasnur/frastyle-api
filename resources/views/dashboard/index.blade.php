@@ -16,10 +16,10 @@
     <div class='dashboard'>
         <div class='container'>
             <div class="card row flex-column flex-m-row items-center bg-primary white shadow p-2 px-m-3">
-                <img class="box-1 mx-0" height="64px" width="64px" src="https://avatars.githubusercontent.com/u/44259946?v=4" alt="">
+                <img class="box-1 bg-white mx-0" height="64px" width="64px" src="{{ Auth::user()->img_profile }}" alt="{{ "Image profile @".Auth::user()->name }}">
                 <div class="box-10 text-center text-m-left mx-0 ml-m-3">
                     <span>Selamat datang,</span>
-                    <h4 class="m-0">@bagasnur</h4>
+                    <h4 class="m-0">{{ "@".Auth::user()->name }}</h4>
                 </div>
             </div>
             <div class="row my-3">
