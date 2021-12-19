@@ -128,17 +128,14 @@ class ContentController extends Controller
 
     public function destroy($id)
     {
-        $result = Content::where('id', $id)->first();
-        if ($result->delete()) {
-            $result->version()->detach();
-            $result->label()->detach();
+        $content = Content::where('id', $id)->first();
+        $value_content = $content->title;
 
-            $data['code'] = 200;
-            $data['message'] = "Data Konten: '" . $result->title . "' dihapus.";
-        } else {
-            $data['code'] = 500;
-            $data['message'] = 'Error';
-        }
-        return response()->json($data);
+        $content->delete();
+        $content->version()->detach();
+        $content->tag()->detach();
+
+        return redirect( route('konten') )
+                ->with('success','Konten '.$value_content.' berhasil dihapus.');
     }
 }
