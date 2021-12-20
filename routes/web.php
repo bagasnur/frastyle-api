@@ -84,7 +84,3 @@ Route::prefix('dashboard')->group(function () {
         Route::delete('/versi/{id}/hapus', [VersionController::class, 'destroy'])->name('versi.destroy');
     });
 });
-
-Route::fallback(function () {
-    return view('404notfound');
-});
