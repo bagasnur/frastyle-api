@@ -24,8 +24,7 @@ class ContentController extends Controller
 
     public function index()
     {
-        $content = Content::with('version')->with('category')->with('tag')->get();
-
+        $content = Content::with('version')->with('category')->get();
         return view('dashboard.konten.index', compact('content'));
     }
 
