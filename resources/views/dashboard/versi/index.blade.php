@@ -37,7 +37,7 @@
                 @foreach ( $version as $row )
                     <tr>
                         <td class="column-fit text-center">{{ $no++ }}</td>
-                        <td class="text-center">v.{{ $row->number }}</td>
+                        <td class="text-center">{{ $row->number }}.x</td>
                         <td class="text-center"><span class="badge {{ $row->stage == 'release' ? '': 'bg-warning' }}">{{ $row->stage == 'rc' ? 'Release Candidate': ucfirst($row->stage) }}</span></td>
                         <td class="icon-table">
                             <a href="{{ route('versi.edit', $row->id) }}" class="button-dark" title="Sunting">

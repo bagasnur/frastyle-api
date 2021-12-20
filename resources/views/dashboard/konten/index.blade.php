@@ -40,7 +40,7 @@
                         <td class="column-fit text-center">{{ $no++ }}</td>
                         <td class="column-fit text-center">
                         @foreach ( $row->version as $version )
-                            <span class="badge {{ $version->stage == 'release' ? '': 'bg-warning' }}">v.{{ $version->number }}</span>
+                            <span class="badge {{ $version->stage == 'release' ? '': 'bg-warning' }}">{{ $version->number }}.x</span>
                         @endforeach
                         </td>
                         <td>{{ $row->title }}</td>

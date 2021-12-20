@@ -45,7 +45,7 @@
                             }
                             @endforeach
                             >
-                            <label for="ver-{{ $no++ }}" class="badge">{{ "v.".$row->number." ".$row->stage }}</label>
+                            <label for="ver-{{ $no++ }}" class="badge">{{ $row->number.".x-".$row->stage }}</label>
                             </div>
                         @empty
                             <small>

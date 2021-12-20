@@ -37,7 +37,7 @@
                         @forelse ($versions as $version)
                             <div>
                             <input id="ver-{{ $no }}" type="checkbox" name="versi[]" style="display: none;" value="{{$version->id}}">
-                            <label for="ver-{{ $no++ }}" class="badge">{{ "v.".$version->number." ".$version->stage }}</label>
+                            <label for="ver-{{ $no++ }}" class="badge">{{ $version->number.".x-".$version->stage }}</label>
                             </div>
                         @empty
                             <small>
