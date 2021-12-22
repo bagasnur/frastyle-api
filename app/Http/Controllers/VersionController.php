@@ -39,7 +39,7 @@ class VersionController extends Controller
         ]);
 
         return redirect( route('versi') )
-                ->with('success','Versi v.'.$version->number.' berhasil di tambahkan.');
+                ->with('success','Versi '.$version->number.'.x berhasil di tambahkan.');
     }
 
     public function edit($id)
@@ -66,7 +66,7 @@ class VersionController extends Controller
         ]);
 
         return redirect( route('versi') )
-                ->with('success','Versi v.'.$version->number.' berhasil di update.');
+                ->with('success','Versi '.$version->number.'.x berhasil di update.');
     }
 
     public function destroy($id)
@@ -77,6 +77,6 @@ class VersionController extends Controller
         $version->delete();
 
         return redirect( route('versi') )
-                ->with('success','Versi '.$value_version.' berhasil dihapus.');
+                ->with('success','Versi '.$value_version.'.x berhasil dihapus.');
     }
 }

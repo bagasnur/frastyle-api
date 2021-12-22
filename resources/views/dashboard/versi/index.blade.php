@@ -46,7 +46,7 @@
                             <form id="del{{$row->id}}" action="{{ route('versi.destroy', $row->id) }}" method="POST" class="d-m-inline-block" style="transform: translateY(1px)">
                             @csrf
                             @method('delete')
-                                <button type="button" onclick="deleteAlert('{{ $row->id }}', 'versi', '{{ $row->number }}')" class="button-danger delete" title="Hapus">
+                                <button type="button" onclick="deleteAlert('{{ $row->id }}', 'versi', '{{ $row->number }}.x')" class="button-danger delete" title="Hapus">
                                     <i data-feather="trash"></i>
                                 </button>
                             </form>
