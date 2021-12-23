@@ -56,14 +56,14 @@
                     <!-- Nama File -->
                     <div class="box-m-6 mt-0 form-input">
                         <label for="file">Nama File Konten</label>
-                        <input type="text" name="nama_file" id="file" class="input @error('nama file') invalid @enderror" placeholder="sample.mdx" required>
+                        <input type="text" name="nama_file" id="file" class="input @error('nama_file') invalid @enderror" placeholder="sample.mdx" required>
                     </div>
                 </div>
                 <div class="flex-column flex-m-row">
                     <!-- Kategori -->
                     <div class="box-m-6 mt-0 form-input">
                         <label for="kategori">Pilih Kategori</label>
-                        <select name="kategori" id="kategori" required>
+                        <select name="kategori" id="kategori" class="input @error('kategori') invalid @enderror" required>
                             <option selected value>Pilih kategori...</option>
                             @foreach ($categories as $category)
                             <option value="{{$category->id}}">{{$category->category_idn}}</option>

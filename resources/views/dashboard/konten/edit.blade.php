@@ -71,7 +71,7 @@
                     <!-- Kategori -->
                     <div class="box-m-6 mt-0 form-input">
                         <label for="kategori">Pilih Kategori</label>
-                        <select name="kategori" id="kategori" class="input @error('nama_file') invalid @enderror" required>
+                        <select name="kategori" id="kategori" class="input @error('kategori') invalid @enderror" required>
                             <option>Pilih kategori...</option>
                             @foreach ($categories as $row)
                             <option value="{{$row->id}}" @if (isset($content->category->id) && $content->category->id == $row->id)
